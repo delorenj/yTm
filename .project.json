@@ -1,5 +1,14 @@
 {
   "project_name": "yTm",
   "project_description": "Music",
-  "project_slug": "ytm"
+  "project_id": "ytm",
+  "repo_path": "/home/delorenj/code/yTm",
+  "ticket_provider": {
+    "type": "plane",
+    "workspace": "",
+    "identifier": "",
+    "board_id": "",
+    "state": "planned"
+  },
+  "agents": {}
 }

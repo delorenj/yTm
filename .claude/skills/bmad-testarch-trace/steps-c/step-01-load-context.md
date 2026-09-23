@@ -1,7 +1,7 @@
 ---
 name: 'step-01-load-context'
 description: 'Resolve coverage oracle, load knowledge base, and gather related artifacts'
-nextStepFile: './step-02-discover-tests.md'
+nextStepFile: '{skill-root}/steps-c/step-02-discover-tests.md'
 knowledgeIndex: './resources/tea-index.csv'
 outputFile: '{test_artifacts}/traceability-matrix.md'
 ---
@@ -96,6 +96,10 @@ If none of the four oracle types can be resolved, **HALT** and request the small
 ## 2. Load Knowledge Base
 
 From `{knowledgeIndex}` load:
+
+### Deterministic Knowledge Selection
+
+The fragment list for this step is a closed set. Start empty and add every fragment in the list below. Do not add fragments from tier labels, index descriptions, nearby mentions elsewhere in this step, general usefulness, or possible future need. Deduplicate while preserving the order below. Identical facts and config must produce an identical list.
 
 - `test-priorities-matrix.md`
 - `risk-governance.md`

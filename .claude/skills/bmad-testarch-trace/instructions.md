@@ -30,16 +30,16 @@ This workflow uses **step-file architecture**:
 From `workflow.yaml`, resolve:
 
 - `config_source`, `test_artifacts`, `user_name`, `communication_language`, `document_output_language`, `date`
-- `test_dir`, `source_dir`, `coverage_levels`, `gate_type`, `decision_mode`
+- `test_dir`, `source_dir`, `live_results_input`, `coverage_levels`, `gate_type`, `decision_mode`, `collection_mode`
 
 ### 2. First Step
 
 Load, read completely, and execute:
-`./steps-c/step-01-load-context.md`
+`{skill-root}/steps-c/step-01-load-context.md`
 
 ### 3. Resume Support
 
 If the user selects **Resume** mode, load, read completely, and execute:
-`./steps-c/step-01b-resume.md`
+`{skill-root}/steps-c/step-01b-resume.md`
 
 This checks the output document for progress tracking frontmatter and routes to the next incomplete step.
