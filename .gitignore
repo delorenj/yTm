@@ -12,3 +12,6 @@ node_modules
 .env
 .env.*
 !.env.op
+
+# Canonical agent config lives in .agents; generated skill projections stay local.
+/.agents/skills
